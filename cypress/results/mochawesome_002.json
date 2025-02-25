@@ -1,0 +1,156 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2025-02-24T12:08:57.533Z",
+    "end": "2025-02-24T12:08:59.432Z",
+    "duration": 1899,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a4ef1f7c-9471-4951-b0a4-0c390db70b3b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-Inscription.cy.js",
+      "file": "cypress\\e2e\\api-Inscription.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9f97558f-6567-4a44-96e8-778e714121d8",
+          "title": "POST /inscription",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Inscription à Sneakercraze Market",
+              "fullTitle": "POST /inscription Inscription à Sneakercraze Market",
+              "timedOut": null,
+              "duration": 648,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "inscrireAUnEvenement(events.sneakercrazeMarket);",
+              "err": {
+                "message": "AssertionError: Target cannot be null or undefined.",
+                "estack": "AssertionError: Target cannot be null or undefined.\n    at Context.eval (webpack://cypresstest/./cypress/e2e/api-Inscription.cy.js:26:4)",
+                "diff": null
+              },
+              "uuid": "1ab82153-5cb0-4a26-9437-51bb6dbda7db",
+              "parentUUID": "9f97558f-6567-4a44-96e8-778e714121d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Inscription à World Economic Forum",
+              "fullTitle": "POST /inscription Inscription à World Economic Forum",
+              "timedOut": null,
+              "duration": 632,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "inscrireAUnEvenement(events.worldEconomicForum);",
+              "err": {
+                "message": "AssertionError: Target cannot be null or undefined.",
+                "estack": "AssertionError: Target cannot be null or undefined.\n    at Context.eval (webpack://cypresstest/./cypress/e2e/api-Inscription.cy.js:26:4)",
+                "diff": null
+              },
+              "uuid": "52cf6d5a-5ed0-4cc4-9bf6-0e17df5503c5",
+              "parentUUID": "9f97558f-6567-4a44-96e8-778e714121d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Inscription à Conférence",
+              "fullTitle": "POST /inscription Inscription à Conférence",
+              "timedOut": null,
+              "duration": 413,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "inscrireAUnEvenement(events.conference);",
+              "err": {
+                "message": "AssertionError: Target cannot be null or undefined.",
+                "estack": "AssertionError: Target cannot be null or undefined.\n    at Context.eval (webpack://cypresstest/./cypress/e2e/api-Inscription.cy.js:26:4)",
+                "diff": null
+              },
+              "uuid": "91ffdd85-080d-4cd3-9d30-4526c86a3137",
+              "parentUUID": "9f97558f-6567-4a44-96e8-778e714121d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1ab82153-5cb0-4a26-9437-51bb6dbda7db",
+            "52cf6d5a-5ed0-4cc4-9bf6-0e17df5503c5",
+            "91ffdd85-080d-4cd3-9d30-4526c86a3137"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1693,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
+

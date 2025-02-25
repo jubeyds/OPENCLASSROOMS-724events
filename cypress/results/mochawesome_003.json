@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-24T12:09:08.096Z",
+    "end": "2025-02-24T12:09:08.380Z",
+    "duration": 284,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7d82d79c-c7de-4f7d-ad75-d6930decabbf",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiEventsID.cy.js",
+      "file": "cypress\\e2e\\apiEventsID.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Récupérer toutes les events et extraire un ID",
+          "fullTitle": "Récupérer toutes les events et extraire un ID",
+          "timedOut": null,
+          "duration": 137,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.request(\"GET\", apiEvents).then(response => {\n  eventsId = response.body[Math.floor(Math.random() * response.body.length)].id;\n});",
+          "err": {},
+          "uuid": "f0b51af9-fc67-499b-acd1-5749a5acc8fc",
+          "parentUUID": "7d82d79c-c7de-4f7d-ad75-d6930decabbf",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Récupérer les détails d'une catégorie par ID",
+          "fullTitle": "Récupérer les détails d'une catégorie par ID",
+          "timedOut": null,
+          "duration": 98,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "// Vérifiez que l'ID de catégorie a été extrait avec succès\ncy.request(apiEvents + `/${eventsId}`).its(\"status\").should(\"eq\", 200);",
+          "err": {},
+          "uuid": "aa912f24-b039-4728-b536-e32574ee6eac",
+          "parentUUID": "7d82d79c-c7de-4f7d-ad75-d6930decabbf",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "f0b51af9-fc67-499b-acd1-5749a5acc8fc",
+        "aa912f24-b039-4728-b536-e32574ee6eac"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 235,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

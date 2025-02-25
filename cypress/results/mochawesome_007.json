@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2025-02-24T12:10:40.639Z",
+    "end": "2025-02-24T12:10:44.920Z",
+    "duration": 4281,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ad04eec3-4002-46e1-9d05-0bc50faf87d2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test724-Inscription.cy.js",
+      "file": "cypress\\e2e\\Test724-Inscription.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e9d7f3e4-7781-4e41-8778-e91173acd3a4",
+          "title": "Test sur les formulaires d'Inscription",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Remplit et soumet le formulaire d'inscription \"Sneakercraze market\" avec des données aléatoires",
+              "fullTitle": "Test sur les formulaires d'Inscription Remplit et soumet le formulaire d'inscription \"Sneakercraze market\" avec des données aléatoires",
+              "timedOut": null,
+              "duration": 1946,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const user = (0, _FakeDataInscription.generateRandomUser)();\ncy.visit('/event/679a023cbc77e16c189a57dd');\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[1]/input').type(user.firstName);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[2]/input').type(user.lastName);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[3]/input').type(user.email);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/input').click();\ncy.contains('Merci pour votre inscription !').should('be.visible');",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'cover')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'cover')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at EventPage (http://localhost:3000/static/js/bundle.js:3017:22)\n    at renderWithHooks (http://localhost:3000/static/js/bundle.js:28939:22)\n    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:32506:24)\n    at beginWork (http://localhost:3000/static/js/bundle.js:34225:20)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:19195:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:19239:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:19296:35)\n    at beginWork$1 (http://localhost:3000/static/js/bundle.js:39194:11)\n    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:38442:16)\n    at workLoopSync (http://localhost:3000/static/js/bundle.js:38365:9)",
+                "diff": null
+              },
+              "uuid": "6209beac-6d31-40c6-9edc-d491d103bde5",
+              "parentUUID": "e9d7f3e4-7781-4e41-8778-e91173acd3a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remplit et soumet le formulaire d'inscription \"conférence\" avec des données aléatoires",
+              "fullTitle": "Test sur les formulaires d'Inscription Remplit et soumet le formulaire d'inscription \"conférence\" avec des données aléatoires",
+              "timedOut": null,
+              "duration": 1463,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const user = (0, _FakeDataInscription.generateRandomUser)();\ncy.visit('/event/67a476488dfff2e785d9b94e');\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[1]/input').type(user.firstName);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[2]/input').type(user.lastName);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[3]/input').type(user.email);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/input').click();\ncy.contains('Merci pour votre inscription !').should('be.visible');",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'cover')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'cover')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at EventPage (http://localhost:3000/static/js/bundle.js:3017:22)\n    at renderWithHooks (http://localhost:3000/static/js/bundle.js:28939:22)\n    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:32506:24)\n    at beginWork (http://localhost:3000/static/js/bundle.js:34225:20)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:19195:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:19239:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:19296:35)\n    at beginWork$1 (http://localhost:3000/static/js/bundle.js:39194:11)\n    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:38442:16)\n    at workLoopSync (http://localhost:3000/static/js/bundle.js:38365:9)",
+                "diff": null
+              },
+              "uuid": "3c332c03-c898-42a2-b477-e3f2d25513b8",
+              "parentUUID": "e9d7f3e4-7781-4e41-8778-e91173acd3a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remplit et soumet le formulaire d'inscription Sneakercraze market avec des données aléatoires",
+              "fullTitle": "Test sur les formulaires d'Inscription Remplit et soumet le formulaire d'inscription Sneakercraze market avec des données aléatoires",
+              "timedOut": null,
+              "duration": 758,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const user = (0, _FakeDataInscription.generateRandomUser)();\ncy.visit('/event/679a023cbc77e16c189a57dd');\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[1]/input').type(user.firstName);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[2]/input').type(user.lastName);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/div[3]/input').type(user.email);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/form/div/div/input').click();\ncy.contains('Merci pour votre inscription !').should('be.visible');",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'cover')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'cover')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at EventPage (http://localhost:3000/static/js/bundle.js:3017:22)\n    at renderWithHooks (http://localhost:3000/static/js/bundle.js:28939:22)\n    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:32506:24)\n    at beginWork (http://localhost:3000/static/js/bundle.js:34225:20)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:19195:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:19239:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:19296:35)\n    at beginWork$1 (http://localhost:3000/static/js/bundle.js:39194:11)\n    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:38442:16)\n    at workLoopSync (http://localhost:3000/static/js/bundle.js:38365:9)",
+                "diff": null
+              },
+              "uuid": "5f6d4fc1-6e05-4531-90e0-7a97b6d63d35",
+              "parentUUID": "e9d7f3e4-7781-4e41-8778-e91173acd3a4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6209beac-6d31-40c6-9edc-d491d103bde5",
+            "3c332c03-c898-42a2-b477-e3f2d25513b8",
+            "5f6d4fc1-6e05-4531-90e0-7a97b6d63d35"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4167,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
