@@ -21,8 +21,8 @@ Pré-requis
 
 1. **Clonez le repository :**
 
-   ```bash
-   git clone https://github.com/votre-utilisateur/724events.git
+   
+   git clone https://github.com/jubeyds/OPENCLASSROOMS-724events.git
 
 Installez les dépendances :
 
