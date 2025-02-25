@@ -1,6 +1,6 @@
 724events
 
-724 est site un site d'une agence dédié à l'événementiel. Ce projet vise tester le site avant la mise en production.
+724 est site un site d'une agence dédié à l'événementiel. Ce projet vise à tester le site avant la mise en production.
 Ce projet a pour objectif d'automatiser les tests fonctionnels critiques du site afin de garantir la qualité du produit à chaque déploiement. Les tests couvrent notamment :
 
 - Le **formulaire de Contact** (soumission et affichage du message de succès)
@@ -24,14 +24,7 @@ Pré-requis
    ```bash
    git clone https://github.com/votre-utilisateur/724events.git
 
-Accédez au répertoire du projet :
-
-bash
-
-cd 724events
 Installez les dépendances :
-
-bash
 
 npm install
 
@@ -42,36 +35,32 @@ Construire l'image Docker
 
 Assurez-vous d'être à la racine du projet, puis exécutez :
 
-
-
 docker build -t 724events .
 Démarrer le conteneur Docker
 
 Lancez le conteneur avec :
 
-
-
 docker run -d -p 3000:3000 -p 8080:8080 --name 724events-container 724events
+
 Le site sera accessible sur http://localhost:3000
 L'API sera accessible sur http://localhost:8080/api
+
+
 Arrêter et Supprimer le Conteneur
 
 Pour arrêter le conteneur :
 
-
-
 docker stop 724events-container
+
 Pour le supprimer :
-
-
 
 docker rm 724events-container
 
 
 
-Le fichier de configuration de Cypress se trouve à la racine du projet dans cypress.config.js. Par exemple :
+Le fichier de configuration de Cypress se trouve à la racine du projet dans cypress.config.js. 
 
-
+Par exemple :
 
 const { defineConfig } = require("cypress");
 
@@ -91,15 +80,15 @@ Exécution des Tests
 En Mode GUI (Interface Graphique)
 Pour ouvrir l'interface de Cypress :
 
-
-
 npx cypress open
+
+
 En Mode Headless
+
 Pour exécuter tous les tests en mode headless (sans interface graphique) :
 
-
-
 npx cypress run
+
 
 Générer des rapport HTML dans Cypress :
 
@@ -112,6 +101,7 @@ const { defineConfig } = require ( 'cypress' )
 module .exports = defineConfig ({ reporter : 'mochawesome' , reporterOptions : { reportDir : 'cypress/results' , overwrite : false , html : true , json : true , }   , })
   
   Ligne de commande :
+  
 cypress run --reporter mochawesome \ 
   --reporter-options reportDir= "cypress/results" ,overwrite= false ,html= false ,json= true
   
