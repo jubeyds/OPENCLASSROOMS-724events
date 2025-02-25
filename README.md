@@ -1,7 +1,7 @@
 724events
 
 724 est site un site d'une agence dédié à l'événementiel. Ce projet vise tester le site avant la mise en production.
-e projet a pour objectif d'automatiser les tests fonctionnels critiques du site afin de garantir la qualité du produit à chaque déploiement. Les tests couvrent notamment :
+Ce projet a pour objectif d'automatiser les tests fonctionnels critiques du site afin de garantir la qualité du produit à chaque déploiement. Les tests couvrent notamment :
 
 - Le **formulaire de Contact** (soumission et affichage du message de succès)
 - Le **formulaire d’Inscription** (inscription utilisateur et affichage du message de confirmation)
